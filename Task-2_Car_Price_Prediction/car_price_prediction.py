@@ -10,8 +10,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # 1. Load Dataset
-
-data = pd.read_csv("dataset/CarPrice.csv")
+data = pd.read_csv("Car data.csv")
 
 # 2. Quick View of Data
 
@@ -30,8 +29,8 @@ data = pd.get_dummies(data, drop_first=True)
 
 # 4. Features (X) and Target (y)
 
-X = data.drop("price", axis=1)   # independent variables
-y = data["price"]                # target variable
+X = data.drop("Selling_Price", axis=1)
+y = data["Selling_Price"]
 
 # 5. Train-Test Split
 

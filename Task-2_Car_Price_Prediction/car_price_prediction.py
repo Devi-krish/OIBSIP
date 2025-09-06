@@ -10,6 +10,9 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 
 # 1. Load Dataset
+
+
+
 data = pd.read_csv("Car data.csv")
 
 # 2. Quick View of Data

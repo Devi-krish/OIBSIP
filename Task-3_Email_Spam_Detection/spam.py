@@ -10,8 +10,9 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
 # Load dataset
-# data = pd.read_csv("dataset/spam.csv", encoding='latin-1')
-data = pd.read_csv("spam.csv")
+
+data = pd.read_csv("spam.csv", encoding="latin-1")
+
 
 # Keep only necessary columns
 data = data[['v1', 'v2']]
